@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE 04 - ALURAFLIX Y PELÍCULAS FAVORITAS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://user-images.githubusercontent.com/121910576/257301160-11f2dba6-23f2-4a8a-8c14-10ca8825acc8.png"
+            class="page-logo" alt="">
+        <p class="page-subtitle">
+            ¿Cuál es tú película favorita?
+        </p>
+        <div class="form-wrapper">
+            <input type="text" id="pelicula" name="pelicula" placeholder="Agregue la dirección de la imagen" required>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Agrega el nombre de la película" required>
+            <button onClick="agregarPelicula()">Agregar película</button>
+            <button onClick="eliminarPelicula()" style="background: #FF4B2B;">Eliminar película</button>
+            <br><br>
+            <span id="errorI"></span>
+        </div>
+    </div>
+    <div id="peliculas">
+
+    </div>
+
+    <a href="https://www.aluracursos.com/" target="_blank">
+        <img src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg" alt=""
+            class="alura-latam-logo">
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
